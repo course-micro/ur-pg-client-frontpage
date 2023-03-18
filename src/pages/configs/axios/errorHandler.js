@@ -10,7 +10,7 @@ export default function errorHandler(error) {
         } else {
             message = error.response.data.message
         }
-        if(typeof message === 'object'){
+        if(typeof message === 'string'){
             toast.error(message)
 
         return Promise.reject(error)

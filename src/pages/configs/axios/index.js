@@ -1,5 +1,5 @@
 import axios from 'axios'
-import errorHandler from './errorHandler'
+import errorHandler from '../axios/errorHandler'
 
 const instance = axios.create({
     baseURL: `${process.env.NEXT_PUBLIC_API_URL}`,
